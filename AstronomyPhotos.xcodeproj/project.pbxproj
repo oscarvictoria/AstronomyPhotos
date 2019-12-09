@@ -14,6 +14,10 @@
 		BE1E9452239EB70C00A4DB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1E9451239EB70C00A4DB14 /* Assets.xcassets */; };
 		BE1E9455239EB70C00A4DB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1E9453239EB70C00A4DB14 /* LaunchScreen.storyboard */; };
 		BE1E9460239EB70C00A4DB14 /* AstronomyPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E945F239EB70C00A4DB14 /* AstronomyPhotosTests.swift */; };
+		BE1E946B239EB75700A4DB14 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E946A239EB75700A4DB14 /* NetworkHelper.swift */; };
+		BE1E946D239EB76500A4DB14 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E946C239EB76500A4DB14 /* AppError.swift */; };
+		BE1E946F239EB90B00A4DB14 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E946E239EB90B00A4DB14 /* PhotoCell.swift */; };
+		BE1E9471239EB9F100A4DB14 /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E9470239EB9F100A4DB14 /* UIImageView + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		BE1E945B239EB70C00A4DB14 /* AstronomyPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1E945F239EB70C00A4DB14 /* AstronomyPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPhotosTests.swift; sourceTree = "<group>"; };
 		BE1E9461239EB70C00A4DB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1E946A239EB75700A4DB14 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		BE1E946C239EB76500A4DB14 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BE1E946E239EB90B00A4DB14 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		BE1E9470239EB9F100A4DB14 /* UIImageView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +90,11 @@
 				BE1E9448239EB70A00A4DB14 /* AppDelegate.swift */,
 				BE1E944A239EB70A00A4DB14 /* SceneDelegate.swift */,
 				BE1E944C239EB70A00A4DB14 /* ViewController.swift */,
+				BE1E946A239EB75700A4DB14 /* NetworkHelper.swift */,
+				BE1E946C239EB76500A4DB14 /* AppError.swift */,
 				BE1E944E239EB70A00A4DB14 /* Main.storyboard */,
+				BE1E946E239EB90B00A4DB14 /* PhotoCell.swift */,
+				BE1E9470239EB9F100A4DB14 /* UIImageView + Extensions.swift */,
 				BE1E9451239EB70C00A4DB14 /* Assets.xcassets */,
 				BE1E9453239EB70C00A4DB14 /* LaunchScreen.storyboard */,
 				BE1E9456239EB70C00A4DB14 /* Info.plist */,
@@ -200,8 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1E946B239EB75700A4DB14 /* NetworkHelper.swift in Sources */,
 				BE1E944D239EB70A00A4DB14 /* ViewController.swift in Sources */,
+				BE1E946D239EB76500A4DB14 /* AppError.swift in Sources */,
 				BE1E9449239EB70A00A4DB14 /* AppDelegate.swift in Sources */,
+				BE1E9471239EB9F100A4DB14 /* UIImageView + Extensions.swift in Sources */,
+				BE1E946F239EB90B00A4DB14 /* PhotoCell.swift in Sources */,
 				BE1E944B239EB70A00A4DB14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
