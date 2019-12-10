@@ -11,9 +11,20 @@ import UIKit
 class PhotoCell: UITableViewCell {
 
 @IBOutlet weak var planetImage: UIImageView!
+    // Objective is to stop flickering while dequeue reusable cells
+    // Solution: Keep track of the image url string by using a string variable on the cell
+    
+    override func prepareForReuse() {
+         super.prepareForReuse()
+         // empty out the image view
+         planetImage.image = nil
+     }
+    
+    private var urlString = ""
     
     func configured(with urlString: String) {
-        planetImage.setImage(with: urlString) { (result) in
+        self.urlString = urlString
+        planetImage.getImage(with: urlString) { (result) in
             switch result {
             case .failure:
                 DispatchQueue.main.async {
@@ -21,11 +32,16 @@ class PhotoCell: UITableViewCell {
                 }
             case .success(let image):
                 DispatchQueue.main.async {
-                    self.planetImage.image = image
+                    // Only if the cell's urlString is the same as the one being passed in from the cellForRowat
+                    if self.urlString == urlString {
+                        self.planetImage.image = image
+                    }
                 }
                 
             }
         }
     }
+    
+ 
 
 }

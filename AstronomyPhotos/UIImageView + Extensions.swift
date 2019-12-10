@@ -11,7 +11,7 @@ import UIKit
 extension UIImageView {
     // instance method
     
-    func setImage(with urlString: String,
+    func getImage(with urlString: String,
                   completion: @escaping (Result<UIImage, AppError>) -> ()) {
         
         // configured UIActivityIndicatorView
