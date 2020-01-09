@@ -24,17 +24,17 @@ class PhotoCell: UITableViewCell {
     
     func configured(with urlString: String) {
         self.urlString = urlString
-        planetImage.getImage(with: urlString) { (result) in
+        planetImage.getImage(with: urlString) { [weak self] (result) in
             switch result {
             case .failure:
                 DispatchQueue.main.async {
-                    self.planetImage.image = UIImage(systemName: "person.fill")
+                    self?.planetImage.image = UIImage(systemName: "person.fill")
                 }
             case .success(let image):
                 DispatchQueue.main.async {
                     // Only if the cell's urlString is the same as the one being passed in from the cellForRowat
-                    if self.urlString == urlString {
-                        self.planetImage.image = image
+                    if self?.urlString == urlString {
+                        self?.planetImage.image = image
                     }
                 }
                 
